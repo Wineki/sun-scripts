@@ -1,0 +1,22 @@
+{
+  "name": "insurance-h5",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "pm2 start index.js --name=insurance",
+    "stop":  "pm2 stop insurance",
+    "detect":"pm2 show insurance",
+    "arthur-start": "pm2 start index.js --name=insurance",
+    "arthur-stop": "pm2 stop insurance"
+  },
+  "dependencies": {
+    "http-proxy": "^1.17.0",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.2.1"
+  }
+}
